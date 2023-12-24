@@ -1,0 +1,14 @@
+[package]
+name = "polarion"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+phf = {version = "0.11.2", features = ["macros"]}
+
+[profile.profile]
+inherits = "release"
+debug = 1
+lto = "fat"
+opt-level = 3
+codegen-units = 1

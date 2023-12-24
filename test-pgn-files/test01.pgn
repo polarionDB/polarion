@@ -1,0 +1,5 @@
+[Event "Hello, World"]
+[Site "Foo-Bar"]
+
+1. e4 (1. d4) 1... e5 (1... d5) 2. d4 c5 3. Nf3 cxd4 4. Bc4 Nc6 5. O-O d6 6.
+Bxf7+ $2 *
