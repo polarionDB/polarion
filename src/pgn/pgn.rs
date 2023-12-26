@@ -1,4 +1,4 @@
-use crate::polarion_move::Move;
+use crate::pmove::Move;
 use super::parser::{self, PgnToken};
 use std::{fs, str::FromStr, io::Read, os::unix::fs::MetadataExt};
 use std::collections::HashMap;
@@ -20,7 +20,7 @@ pub struct PgnGame {
 
 #[derive(Debug, Default, PartialEq, Eq)]
 pub struct PgnDatabase {
-    games: Vec<PgnGame>,
+    pub games: Vec<PgnGame>,
 }
 
 impl TryFrom<fs::File> for PgnDatabase {
