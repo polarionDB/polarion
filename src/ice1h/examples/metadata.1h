@@ -1,11 +1,11 @@
 // Metadata in polarionDB is a hashtable that links one string to an another.
 // Indexing a hashtable in ice1h retruns an Option
 
-allMetadata = [game.metadata for game in Tgames]
+let allMetadata = [game.metadata for game in Tgames]
 
 // Indexing in ice1h Dumps an Option<String>
-onlyEvent    = [ game.metadata["Event"] for game in Tgames]
-eventAndSite = [[game.metadata["Event"], game.metadata["Site"]] for game in Tgames]
+let onlyEvent    = [ game.metadata["Event"] for game in Tgames]
+let eventAndSite = [[game.metadata["Event"], game.metadata["Site"]] for game in Tgames]
 
 dump allMetadata
 dump onlyEvent
