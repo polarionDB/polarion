@@ -1,0 +1,12 @@
+// Ice1h implements some function-like keywords that are different from normal keywords and builtin functions
+
+// Function-like keyword list:
+//     dump <EXPRESSION> // Dumps (prints) the object passed to it. Ex:
+//         dump 1 // Prints 1
+//         dump 2 // Prints 2
+//         etc.
+
+// dump
+dump 1
+dump 2
+dump 3

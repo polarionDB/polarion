@@ -1,0 +1,46 @@
+// ice1h's primitive types include:
+//     Char      -> Utf-8 coded charachter (Implements c-style escaping (https://en.wikipedia.org/wiki/Escape_sequences_in_C#Table_of_escape_sequences))
+//     Int       -> 32 bit integer
+//     UInt      -> 32 bit unsigned integer
+//     Boolean   -> True or False
+//     Array     -> A collection of multiple values/objects. The values can be different types
+//     String    -> Utf-8 encoded string literal
+//     Option<T> -> Option is a generic structure that either contains a T value or None
+
+// Char
+
+dump 'a'
+dump 'b'
+dump 'Б'
+dump '\n'
+dump '123' // Errors
+dump '' // Errors: empty charachters aren't allowed
+
+// Int
+dump 1
+dump 0
+dump -1
+dump 2.2 // Errors: floating point numbers don't exist in ice1h
+
+// UInt
+dump 1
+dump 0
+dump -1 // Errors: Unsigned integers only store positive values
+
+// Boolean
+dump true
+dump false
+
+// Array
+dump [1, 2, 3, 4, 256, 'a', true, 'Б']
+// Indexing an array. Array indexes start at 0
+// Syntax: <ARRAY>[<INDEX>]
+dump [1, 2, 3][0]
+
+// String
+dump "¡Hello, World!"
+dump ""
+
+// Option
+dump Option<256> // Dumps: 256
+dump None // Dumps: None

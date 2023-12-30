@@ -1,0 +1,3 @@
+// Array Comprehension is the way ice1h offers the traditional 'SELECT' for polarionDB.
+// It's always hightly optimized and almost every time doesn't actually behave like actual array comprehension.
+// See the next examples for specific implications

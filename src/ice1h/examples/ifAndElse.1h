@@ -1,0 +1,16 @@
+// In ice1h if statements are defined as such:
+// if <expression evaluation to a Bool> then
+//     BODY
+// OPTIONAL elif <expression evaluation to a Bool>
+//     BODY
+// OPTIONAL else
+//     BODY
+// end
+
+if 1 == 2 then
+    dump "Oh no, one is equal to two!"
+elif 2 == 3
+    dump "Oh no, two is equal to three!"
+else
+    dump "Oh yay, math is still intact!"
+end

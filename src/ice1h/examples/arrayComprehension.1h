@@ -1,0 +1,7 @@
+// Array comprehension in ice1h is written like it's in python
+// It's a shorter syntax of where you want to create an array from an another array
+
+// Example:
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+dump [x * 2 for x in nums] // Dumps [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+dump [x for x in nums where x % 2 == 0] // Dumps [2, 4, 6, 8, 10]

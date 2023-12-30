@@ -1,0 +1,37 @@
+// Variables are bindings to values.
+
+// To define a variable you use the `let` keyword.
+// let <NAME> = <VALUE>
+//
+// Variable names can't start with 'T', can't include whitespace, can't start with a digit, can't be a keyword 
+// and can't conatain any symbols except '_'
+
+let x = 4
+// Variables can bind to other variables as well!
+let y = x
+
+dump x // Dumps 4
+dump y // Also dumps 4
+
+// Variables are by default mutable
+x = 3
+
+dump x // Dumps 3
+dump y // Still dumps 4
+
+// To make a variable immutable, you use the `const` keyword
+// const <NAME> = <VALUE>
+
+const z = 5
+let w = z
+
+dump z // Dumps 5
+dump w // Also Dumps 5
+
+//////
+z = 6 // Errors: Constants are immutable
+//////
+
+w = 6
+dump w // Dumps 6
+dump z // Still Dumps 5

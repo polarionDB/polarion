@@ -1,0 +1,23 @@
+// Since ice1h is a query language designed to interact with polarionDB, there needs a way to access polarionDB's tables.
+// PolarionDB's tables are defined sort of like global variables. They're always prefixed with a capital 'T'.
+// Tables can be treated as array like objects
+
+// These tables are always provided:
+// Tpositions: A table that stores every position in the database.
+// Tgames: A table that stores every game in the database
+
+dump Tpositions
+dump Tgames
+
+dump Tfoo // Errors: No table named "foo" found
+
+// Tgames
+//
+// Tgames is an array-like object storing a structure similar to this:
+//
+// struct Game {
+//     metadata: Hashtable<String, String>,
+//     moves:    Array<Move>
+// }
+//
+// Both metadata and moves are discused more thoroughly in the next examples 
