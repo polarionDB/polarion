@@ -1,1 +1,7 @@
-// TODO
+// Indexing through individual moves of a game
+
+#enable builtins
+
+let game = Tgames[rand(0, count(Tgames))]
+
+dump [move for move in game.moves where move.from == 'e2' & move.piece == 'P']

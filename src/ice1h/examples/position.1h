@@ -1,1 +1,5 @@
-// TODO
+// Indexing through individual moves of a game
+
+#enable builtins
+
+dump [position in Tpoistions where position has-piece(white_knight) on 'g1']

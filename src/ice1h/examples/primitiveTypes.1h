@@ -1,12 +1,11 @@
 // ice1h's primitive types include:
-//     Char      -> Utf-8 coded charachter (Implements c-style escaping (https://en.wikipedia.org/wiki/Escape_sequences_in_C#Table_of_escape_sequences))
-//     Int       -> 32 bit integer
-//     UInt      -> 32 bit unsigned integer
-//     Boolean   -> True or False
-//     Array     -> A collection of multiple values/objects. The values can be different types
-//     String    -> Utf-8 encoded string literal
-//     Option<T> -> Option is a generic structure that either contains a T value or None
-
+//     Char         -> Utf-8 coded charachter (Implements c-style escaping (https://en.wikipedia.org/wiki/Escape_sequences_in_C#Table_of_escape_sequences))
+//     Int          -> 32 bit integer
+//     UInt         -> 32 bit unsigned integer
+//     Boolean      -> True or False
+//     Array        -> A collection of multiple values/objects. The values can be different types
+//     String       -> Utf-8 encoded string literal
+//     Option<T>    -> Option is a generic structure that either contains a T value or None
 // Char
 
 dump 'a'

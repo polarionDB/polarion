@@ -21,3 +21,10 @@ dump Tfoo // Errors: No table named "foo" found
 // }
 //
 // Both metadata and moves are discused more thoroughly in the next examples 
+
+// Tpositions
+//
+// Tpositions is a hashtable linking a position to a relative poi:
+//
+// Tpositions: Hashtable<Position, [RelativePointers]>
+// I still haven't decided how to store positions, so let's say it's just some ambiguous type

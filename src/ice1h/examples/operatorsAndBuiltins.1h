@@ -79,7 +79,7 @@ dump 5 >= 3 // Dumps True
 // List of builtin functions
 
 // count - Counts the element of an array-like
-dump count(games)
+dump count(Tgames)
 
 // string_to_int - Converts a string to an integer. May throw error
 dump string_to_int("64") // Dumps 64
@@ -120,3 +120,7 @@ dump toLower(123) // Errors
 dump toLower('a') // Dumps 'A'
 dump toLower("EvEnT") // Dumps "event"
 dump toLower(123) // Errors
+
+// rand - Generates a random number through the given constrains
+dump rand(-1, 1) // Generates a number through the range -1 and 1
+dump rand(-10, 10) // Generates a number through the range -10 and 10
